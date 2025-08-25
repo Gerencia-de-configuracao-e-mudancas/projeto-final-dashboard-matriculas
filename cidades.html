@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Cursos - Dashboard</title>
+    <title>Lista de Cidades - Dashboard</title>
     <!-- Link para o Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -18,19 +18,19 @@
             </div>
             <nav class="mt-8">
                 <!-- Link para o Dashboard -->
-                <a href="menu.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+                <a href="index.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
                     Dashboard
                 </a>
                 <!-- Link para Alunos -->
                 <a href="alunos.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
                     Alunos
                 </a>
-                <!-- Link ATIVO para Cursos -->
-                <a href="cursos.html" class="block py-2.5 px-4 rounded transition duration-200 bg-gray-700 text-white">
+                <!-- Link para Cursos -->
+                <a href="cursos.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
                     Cursos
                 </a>
-                <!-- Link para Cidades -->
-                <a href="cidades.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+                <!-- Link ATIVO para Cidades -->
+                <a href="cidades.html" class="block py-2.5 px-4 rounded transition duration-200 bg-gray-700 text-white">
                     Cidades
                 </a>
             </nav>
@@ -47,32 +47,34 @@
             </header>
 
             <!-- =================================================================== -->
-            <!-- INÍCIO DA ÁREA DE CONTEÚDO PRINCIPAL (MAIN) PARA A LISTA DE CURSOS -->
+            <!-- INÍCIO DA ÁREA DE CONTEÚDO PRINCIPAL (MAIN) PARA A LISTA DE CIDADES -->
             <!-- =================================================================== -->
             <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-800 p-6">
                 <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto">
                     
                     <!-- Título e Botão -->
                     <div class="flex justify-between items-center mb-6">
-                        <h1 class="text-3xl font-bold">Lista de Cursos</h1>
+                        <h1 class="text-3xl font-bold">Lista de Cidades</h1>
                         <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
                             Novo Cadastro
                         </a>
                     </div>
 
-                    <!-- Tabela de Cursos -->
+                    <!-- Tabela de Cidades -->
                     <div class="overflow-x-auto">
                         <table class="w-full text-left border-collapse">
                             <thead>
                                 <tr>
                                     <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300">Nome</th>
+                                    <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300">Sigla</th>
                                     <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300 text-right">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- Linha 1 -->
                                 <tr class="hover:bg-gray-100">
-                                    <td class="py-3 px-4 border-b border-gray-300">ADS</td>
+                                    <td class="py-3 px-4 border-b border-gray-300">Sousa</td>
+                                    <td class="py-3 px-4 border-b border-gray-300">PB</td>
                                     <td class="py-3 px-4 border-b border-gray-300 text-right">
                                         <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded text-xs">Editar</button>
                                         <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs ml-2">Remover</button>
@@ -80,7 +82,8 @@
                                 </tr>
                                 <!-- Linha 2 -->
                                 <tr class="hover:bg-gray-100">
-                                    <td class="py-3 px-4 border-b border-gray-300">ADS2</td>
+                                    <td class="py-3 px-4 border-b border-gray-300">Pau dos Ferros</td>
+                                    <td class="py-3 px-4 border-b border-gray-300">RN</td>
                                     <td class="py-3 px-4 border-b border-gray-300 text-right">
                                         <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded text-xs">Editar</button>
                                         <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs ml-2">Remover</button>
