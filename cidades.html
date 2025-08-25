@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Cidades - Dashboard</title>
-    <!-- Link para o Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Cidades - Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-800 font-sans leading-normal tracking-normal">
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">IFPB - 4º Ano</div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="cidades.html" class="active">Cidades</a>
+      </nav>
+    </aside>
 
-    <div class="flex h-screen">
+    <div class="content">
+      <header class="header">
+        <div></div>
+        <button class="signout">Sign out</button>
+      </header>
 
-        <!-- Barra de Navegação Lateral (Sidebar) -->
-        <aside class="w-64 bg-gray-900 text-gray-200">
-            <div class="p-4 text-2xl font-bold">
-                IFPB - 4º Ano
-            </div>
-            <nav class="mt-8">
-                <!-- Link para o Dashboard -->
-                <a href="index.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
-                    Dashboard
-                </a>
-                <!-- Link para Alunos -->
-                <a href="alunos.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
-                    Alunos
-                </a>
-                <!-- Link para Cursos -->
-                <a href="cursos.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
-                    Cursos
-                </a>
-                <!-- Link ATIVO para Cidades -->
-                <a href="cidades.html" class="block py-2.5 px-4 rounded transition duration-200 bg-gray-700 text-white">
-                    Cidades
-                </a>
-            </nav>
-        </aside>
+      <main class="main">
+        <div class="card">
+          <div class="toolbar" style="justify-content:space-between; align-items:center;">
+            <h1 class="h1" style="margin:0">Lista de Cidades</h1>
+            <button class="btn btn-green">Novo Cadastro</button>
+          </div>
 
-        <!-- Conteúdo Principal -->
-        <div class="flex-1 flex flex-col overflow-hidden">
-            <!-- Cabeçalho (Header) - Mantido para consistência do layout -->
-            <header class="flex justify-between items-center p-4 bg-gray-900 border-b border-gray-700">
-                <div></div>
-                <div>
-                    <button class="px-4 py-2 bg-red-600 rounded hover:bg-red-700">Sign out</button>
-                </div>
-            </header>
-
-            <!-- =================================================================== -->
-            <!-- INÍCIO DA ÁREA DE CONTEÚDO PRINCIPAL (MAIN) PARA A LISTA DE CIDADES -->
-            <!-- =================================================================== -->
-            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-800 p-6">
-                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto">
-                    
-                    <!-- Título e Botão -->
-                    <div class="flex justify-between items-center mb-6">
-                        <h1 class="text-3xl font-bold">Lista de Cidades</h1>
-                        <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-                            Novo Cadastro
-                        </a>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Sigla</th>
+                  <th style="text-align:right;">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sousa</td>
+                  <td>PB</td>
+                  <td style="text-align:right;">
+                    <div class="actions" style="justify-content:flex-end;">
+                      <button class="btn btn-blue">Editar</button>
+                      <button class="btn btn-red">Remover</button>
                     </div>
-
-                    <!-- Tabela de Cidades -->
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left border-collapse">
-                            <thead>
-                                <tr>
-                                    <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300">Nome</th>
-                                    <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300">Sigla</th>
-                                    <th class="py-3 px-4 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300 text-right">Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Linha 1 -->
-                                <tr class="hover:bg-gray-100">
-                                    <td class="py-3 px-4 border-b border-gray-300">Sousa</td>
-                                    <td class="py-3 px-4 border-b border-gray-300">PB</td>
-                                    <td class="py-3 px-4 border-b border-gray-300 text-right">
-                                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded text-xs">Editar</button>
-                                        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs ml-2">Remover</button>
-                                    </td>
-                                </tr>
-                                <!-- Linha 2 -->
-                                <tr class="hover:bg-gray-100">
-                                    <td class="py-3 px-4 border-b border-gray-300">Pau dos Ferros</td>
-                                    <td class="py-3 px-4 border-b border-gray-300">RN</td>
-                                    <td class="py-3 px-4 border-b border-gray-300 text-right">
-                                        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded text-xs">Editar</button>
-                                        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded text-xs ml-2">Remover</button>
-                                    </td>
-                                </tr>
-                                <!-- Adicione mais linhas aqui conforme necessário -->
-                            </tbody>
-                        </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pau dos Ferros</td>
+                  <td>RN</td>
+                  <td style="text-align:right;">
+                    <div class="actions" style="justify-content:flex-end;">
+                      <button class="btn btn-blue">Editar</button>
+                      <button class="btn btn-red">Remover</button>
                     </div>
-
-                </div>
-            </main>
-            <!-- =================================================================== -->
-            <!-- FIM DA ÁREA DE CONTEÚDO PRINCIPAL (MAIN) -->
-            <!-- =================================================================== -->
+                  </td>
+                </tr>
+                <!-- Adicione mais cidades aqui -->
+              </tbody>
+            </table>
+          </div>
         </div>
+      </main>
     </div>
-
+  </div>
 </body>
 </html>
