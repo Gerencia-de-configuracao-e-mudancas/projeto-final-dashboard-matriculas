@@ -34,14 +34,14 @@ body{
 }
 
 /* Layout base (todas as páginas) */
-.app{ display:flex; height:100vh; }
-.sidebar{
+.aplicacao{ display:flex; height:100vh; }
+.menu-lateral{
   width:256px;
   background:var(--bg-900);
   color:var(--text-200);
   padding:16px;
 }
-.brand{ font-size:24px; font-weight:700; padding:8px 0; }
+.marca-sistema{ font-size:24px; font-weight:700; padding:8px 0; }
 .nav{ margin-top:24px; display:flex; flex-direction:column; gap:8px; }
 .nav a{
   color:var(--text-200);
@@ -76,13 +76,13 @@ body{
 .mb-24{ margin-bottom:24px; }
 
 /*  Botões  */
-.btn{ display:inline-block; border:0; border-radius:8px; padding:8px 12px; cursor:pointer; font-weight:600; }
-.btn-green{ background:var(--green); color:#fff; }
-.btn-green:hover{ background:var(--green-h); }
-.btn-blue{ background:var(--blue); color:#fff; }
-.btn-blue:hover{ background:var(--blue-h); }
-.btn-red{ background:var(--red); color:#fff; }
-.btn-red:hover{ background:var(--red-h); }
+.botao{ display:inline-block; border:0; border-radius:8px; padding:8px 12px; cursor:pointer; font-weight:600; }
+.botao-verde{ background:var(--green); color:#fff; }
+.botao-verde:hover{ background:var(--green-h); }
+.botao-azul{ background:var(--blue); color:#fff; }
+.botao-azul:hover{ background:var(--blue-h); }
+.botao-vermelho{ background:var(--red); color:#fff; }
+.botao-vermelho:hover{ background:var(--red-h); }
 
 /*  Tabelas  */
 .table-wrap{ overflow:auto; }

@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app">
-    <aside class="sidebar">
+  <div class="aplicacao">
+    <aside class="menu-lateral">
       <div class="brand">IFPB - 4º Ano</div>
       <nav class="nav">
         <a href="index.html">Dashboard</a>
@@ -27,6 +27,9 @@
       <main class="main">
         <div class="card">
           <h1 class="h1">Alunos</h1>
+          <div class="toolbar">
+            <button class="botao botao-verde">Novo Cadastro</button>
+          </div>
           <div class="table-wrap">
             <table class="table">
               <thead>
@@ -44,8 +47,8 @@
                   <td>Engenharia</td>
                   <td>
                     <div class="actions">
-                      <button class="btn btn-blue">Editar</button>
-                      <button class="btn btn-red">Excluir</button>
+                      <button class="botao botao-azul">Editar</button>
+                      <button class="botao botao-vermelho">Excluir</button>
                     </div>
                   </td>
                 </tr>
@@ -55,8 +58,8 @@
                   <td>Direito</td>
                   <td>
                     <div class="actions">
-                      <button class="btn btn-blue">Editar</button>
-                      <button class="btn btn-red">Excluir</button>
+                      <button class="botao botao-azul">Editar</button>
+                      <button class="botao botao-vermelho">Excluir</button>
                     </div>
                   </td>
                 </tr>
@@ -67,5 +70,6 @@
       </main>
     </div>
   </div>
+  <script src="script-alunos.js"></script>
 </body>
 </html>
