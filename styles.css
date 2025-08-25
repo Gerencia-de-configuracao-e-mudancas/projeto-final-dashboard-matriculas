@@ -22,7 +22,7 @@
   --shadow:0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
 }
 
-/* ====== Reset básico ====== */
+/*  Reset básico  */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -33,7 +33,7 @@ body{
   line-height:1.45;
 }
 
-/* ====== Layout base (todas as páginas) ====== */
+/* Layout base (todas as páginas) */
 .app{ display:flex; height:100vh; }
 .sidebar{
   width:256px;
@@ -67,7 +67,7 @@ body{
 
 .main{ flex:1; overflow:auto; padding:32px; }
 
-/* ====== Blocos / Cards ====== */
+/*  Blocos / Cards  */
 .card{
   max-width:1024px; margin:0 auto; background:var(--white);
   border-radius:var(--radius); box-shadow:var(--shadow); padding:32px;
@@ -75,7 +75,7 @@ body{
 .h1{ font-size:24px; font-weight:800; color:var(--text-800); margin:0 0 24px; }
 .mb-24{ margin-bottom:24px; }
 
-/* ====== Botões ====== */
+/*  Botões  */
 .btn{ display:inline-block; border:0; border-radius:8px; padding:8px 12px; cursor:pointer; font-weight:600; }
 .btn-green{ background:var(--green); color:#fff; }
 .btn-green:hover{ background:var(--green-h); }
@@ -84,7 +84,7 @@ body{
 .btn-red{ background:var(--red); color:#fff; }
 .btn-red:hover{ background:var(--red-h); }
 
-/* ====== Tabelas ====== */
+/*  Tabelas  */
 .table-wrap{ overflow:auto; }
 .table{
   width:100%; border-collapse:collapse; background:#fff;
@@ -100,7 +100,7 @@ body{
 .table td{ color:#111827; }
 .actions{ display:flex; gap:8px; }
 
-/* ====== Dashboard (index.html) ====== */
+/*  Dashboard (index.html)  */
 .stats{ display:grid; gap:24px; }
 @media (min-width:768px){ .stats{ grid-template-columns:repeat(3,1fr); } }
 .stat{
@@ -111,6 +111,6 @@ body{
 .stat .label{ font-size:18px; font-weight:600; color:#374151; }
 .stat .sub{ color:var(--muted-500); }
 
-/* ====== Cursos / Cidades / Alunos (sem adicionais além dos comuns) ====== */
+/*  Cursos / Cidades / Alunos   */
 /* Espaçamento do botão "Novo Cadastro" */
 .toolbar{ margin-bottom:24px; display:flex; justify-content:flex-start; }
